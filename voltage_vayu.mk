@@ -11,19 +11,19 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit device configurations
 $(call inherit-product, device/xiaomi/vayu/device.mk)
 
-# Inherit some common Bananadroid stuff.
-$(call inherit-product, vendor/banana/config/common.mk)
+# Inherit some common Voltage OS stuff.
+$(call inherit-product, vendor/voltage/config/common.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 
-# Banana Flags
-BANANA_BUILD_TYPE := OFFICIAL
-BANANA_MAINTAINER :=YFMARCO
+# voltage Flags
+VOLTAGE_BUILD_TYPE := OFFICIAL
+VOLTAGE_MAINTAINER :=YFMARCO
 TARGET_EXCLUDE_MATLOG := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_SUPPORTS_QUICK_TAP := true
 
 
-PRODUCT_NAME := banana_vayu
+PRODUCT_NAME := voltage_vayu
 PRODUCT_DEVICE := vayu
 PRODUCT_BRAND := POCO
 PRODUCT_MODEL := Poco X3 Pro
